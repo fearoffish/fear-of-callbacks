@@ -8,6 +8,24 @@ Add this to your Rails environment file, I recommend only development.rb
 
     config.gem 'fear-of-callbacks'
 
+== Output
+
+Currently your log will fill with lines like the following.  Notice the preceeding equal signs, these allow you to grep for just these calls.  Example:
+
+    $ tail -f log/development.log | grep "=="
+    
+    == Callback => ListItem - after_initialize
+    == Callback => ListItem - before_validation
+    == Callback => ListItem - before_validation_on_create
+    == Callback => ListItem - validate
+    == Callback => ListItem - validate_on_create
+    == Callback => ListItem - after_validation
+    == Callback => ListItem - after_validation_on_create
+    == Callback => ListItem - before_save
+    == Callback => ListItem - before_create
+    == Callback => ListItem - after_create
+    == Callback => ListItem - after_save
+
 == Note on Patches/Pull Requests
  
 * Fork the project.
