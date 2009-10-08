@@ -5,14 +5,14 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "fear-of-callbacks"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{ Activate logging of all your used ActiveRecord callback hooks }
+    gem.description = %Q{ ActiveRecord has lots of callbacks like before_save, this gem logs all of the used ones to your log }
     gem.email = "jamie@fearoffish.com"
     gem.homepage = "http://github.com/fearoffish/fear-of-callbacks"
     gem.authors = ["Jamie van Dyke"]
     gem.add_development_dependency "thoughtbot-shoulda"
     gem.add_development_dependency "yard"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.files = FileList['lib/**/*.rb', 'test/**/*'].to_a
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
