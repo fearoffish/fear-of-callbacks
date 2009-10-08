@@ -21,7 +21,6 @@ Gem::Specification.new do |s|
      "lib/fear-of/callbacks.rb",
      "test/callbacks_test.rb",
      "test/models.rb",
-     "test/test.db",
      "test/test_helper.rb"
   ]
   s.homepage = %q{http://github.com/fearoffish/fear-of-callbacks}
